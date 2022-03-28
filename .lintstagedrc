@@ -1,0 +1,5 @@
+{
+  "{apps, ui, utils, examples}/**/*.ts?(x)": [
+    "eslint --color"
+  ]
+}
