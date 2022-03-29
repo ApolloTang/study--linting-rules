@@ -22,6 +22,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "@myscope/client-app-config": "workspace:*",
     "@myscope/heft-config-default-rig": "workspace:*",
     "@myscope/eslint-config": "workspace:*",
     "@myscope/prettier-config": "workspace:*",

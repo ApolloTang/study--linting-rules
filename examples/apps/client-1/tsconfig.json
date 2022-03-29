@@ -1,26 +1,26 @@
 {
-  "extends": "./tsconfig.base-ui.json",
+  "extends": "./node_modules/@myscope/client-app-config/src/tsconfig-base.json",
 
   "include": ["src/**/*"],
   "exclude": ["node_modules", "build"],
 
   "compilerOptions": {
-    "allowJs": true,
-    "outDir": "dist",
-
     "declaration": false,
-    "noImplicitAny": false,
-    "strictNullChecks": false,
-
+    "typeRoots": ["utils/assets/@types", "./node_modules/@types"],
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"]
     }
+
+    // --------------
+    // Technical debt
+    // --------------
+    // "strict": false,
+    // "noImplicitAny": true
   },
 
   "references": [
-    {"path": "../../ui/component-1"},
-    {"path": "../../utils/util--foo-1"}
+    { "path": "../../ui/component-1" },
+    { "path": "../../utils/util--foo-1" }
   ]
 }
-
