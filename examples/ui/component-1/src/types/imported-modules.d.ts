@@ -1,4 +1,19 @@
-declare module '*.png';
-declare module '*.jpg';
-declare module '*.less';
-declare module '*.css';
+declare module '*.png' {
+  const imageURL: string;
+  export default imageURL;
+}
+
+declare module '*.jpg' {
+  const imageURL: string;
+  export default imageURL;
+}
+
+declare module '*.less' {
+  const styles: { [className: string]: string };
+  export default styles;
+}
+
+declare module '*.css' {
+  const styles: { [className: string]: string };
+  export default styles;
+}
