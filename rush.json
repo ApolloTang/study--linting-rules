@@ -447,6 +447,26 @@
     // },
     //
     //
+    //
+    // examples
+    // -------------------------------------------------------
+
+    {
+      "packageName": "web-app-1",
+      "projectFolder": "examples/apps/web-app-1"
+    },
+    {
+      "packageName": "@myscope/util--foo-1",
+      "projectFolder": "examples/utils/util--foo-1"
+    },
+    {
+      "packageName": "@myscope/ui--component-1",
+      "projectFolder": "examples/ui/component-1"
+    },
+    {
+      "packageName": "@myscope/ui--react-cat-image",
+      "projectFolder": "examples/ui/react-cat-image"
+    },
     // Tools
     // -------------------------------------------------------
     {
@@ -460,6 +480,10 @@
     {
       "packageName": "@myscope/heft-config-default-rig",
       "projectFolder": "tools/heft-config-default-rig"
+    },
+    {
+      "packageName": "@myscope/client-app-config",
+      "projectFolder": "tools/client-app-config"
     }
   ]
 }

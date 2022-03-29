@@ -1,0 +1,12 @@
+{
+  "name": "@myscope/client-app-config",
+  "description": "Configuration for client application",
+  "version": "1.0.0",
+  "main": "index.json",
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "scripts": {
+    "build": ""
+  }
+}

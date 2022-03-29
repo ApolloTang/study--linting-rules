@@ -1,0 +1,18 @@
+{
+  "extends": "./node_modules/@myscope/heft-config-default-rig/profiles/node-util/tsconfig-base.json",
+  "compilerOptions": {
+    "composite": true,
+    "types": ["heft-jest", "node"],
+
+    // -----------------------
+    // [tech-debt] override
+    // -----------------------
+    // "isolatedModules": false,
+    // "strict": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false
+  },
+  "references": [
+    // {"path": "../common-enums"},
+  ]
+}
