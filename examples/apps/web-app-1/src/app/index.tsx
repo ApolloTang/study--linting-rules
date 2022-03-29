@@ -5,7 +5,13 @@ import { fnInFoo1 } from '@myscope/util--foo-1';
 
 import FontTest from '~/font-test/';
 import img from './react.png';
-import s from './style.module.less';
+import styleModule from './style.module.less';
+
+type imgURLType = string;
+type styleType = {
+  [key: string]: string;
+};
+const s = styleModule as styleType;
 
 const someString: string = fnInFoo1(23);
 
@@ -14,7 +20,7 @@ const App = () => (
     <h1>Hello React</h1>
     <div>someString: {someString}</div>
     <div className={`${s.imageContainer}`}>
-      <img src={img} alt="react" />
+      <img src={img as imgURLType} alt="react" />
     </div>
     <Component1 />
     <FontTest />
