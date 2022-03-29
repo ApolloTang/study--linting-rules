@@ -452,8 +452,8 @@
     // -------------------------------------------------------
 
     {
-      "packageName": "web-app-1",
-      "projectFolder": "examples/apps/web-app-1"
+      "packageName": "client-1",
+      "projectFolder": "examples/apps/client-1"
     },
     {
       "packageName": "@myscope/util--foo-1",
