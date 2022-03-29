@@ -1,4 +1,4 @@
-console.log('This is util--foo-1');
+console.info('This is util--foo-1');
 
 import someJson from './bar/foo/somejson.json';
 
