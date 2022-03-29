@@ -2,11 +2,9 @@
   "extends": "./node_modules/@myscope/client-app-config/src/tsconfig-base.json",
 
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "build"],
+  "exclude": ["node_modules", "build", "dist"],
 
   "compilerOptions": {
-    "declaration": false,
-    "typeRoots": ["utils/assets/@types", "./node_modules/@types"],
     "baseUrl": ".",
     "paths": {
       "src/*": ["src/*"]
