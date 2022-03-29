@@ -46,7 +46,7 @@ const webpackConfig_fn = (env = {}) => {
     ),
     resolve: {
       alias: {
-        '~': pathResolve(__dirname, 'src')
+        'src': pathResolve(__dirname, 'src')
       },
       modules: [ absPathToSrc, 'node_modules'],
       extensions: ['*', '.mjs', '.js', '.ts', '.jsx', '.tsx'],

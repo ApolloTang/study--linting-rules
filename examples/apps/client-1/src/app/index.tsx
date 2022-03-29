@@ -3,7 +3,7 @@ import React from 'react';
 import Component1 from '@myscope/ui--component-1';
 import { fnInFoo1 } from '@myscope/util--foo-1';
 
-import FontTest from '~/font-test/';
+import FontTest from 'src/font-test/';
 import img from './react.png';
 import s from './style.module.less';
 

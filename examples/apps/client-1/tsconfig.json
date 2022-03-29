@@ -9,7 +9,7 @@
     "typeRoots": ["utils/assets/@types", "./node_modules/@types"],
     "baseUrl": ".",
     "paths": {
-      "~/*": ["src/*"]
+      "src/*": ["src/*"]
     }
 
     // --------------
