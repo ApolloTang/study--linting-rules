@@ -1,10 +1,9 @@
-/* eslint-disable */
 const isTest = String(process.env.NODE_ENV) === 'test';
 
-module.exports = (api) => {
-  api.cache(true)
+module.exports = api => {
+  api.cache(true);
 
-  console.log(
+  console.info(
     '[Babel] babel.config.js; NODE_ENV: ',
     process.env.NODE_ENV || 'development'
   );
@@ -12,16 +11,16 @@ module.exports = (api) => {
     [
       '@babel/preset-env',
       {
-        'debug': false,
-        'targets': isTest ? {node: 'current'} :'> 0.25%, not dead',
-        'useBuiltIns': 'usage',
-        'corejs': '3.6',
-        'modules': isTest ? 'commonjs' : false
-      }
+        debug: false,
+        targets: isTest ? { node: 'current' } : '> 0.25%, not dead',
+        useBuiltIns: 'usage',
+        corejs: '3.6',
+        modules: isTest ? 'commonjs' : false,
+      },
     ],
     '@babel/preset-react',
-    '@babel/preset-typescript'
-  ]
+    '@babel/preset-typescript',
+  ];
 
   const plugins = [
     ['@babel/plugin-proposal-class-properties', { loose: false }],
@@ -29,11 +28,11 @@ module.exports = (api) => {
     '@babel/plugin-proposal-optional-chaining',
     '@babel/plugin-syntax-dynamic-import',
     isTest ? 'babel-plugin-dynamic-import-node' : null,
-    'lodash'
-  ].filter(Boolean)
+    'lodash',
+  ].filter(Boolean);
 
   return {
     presets,
-    plugins
-  }
-}
+    plugins,
+  };
+};

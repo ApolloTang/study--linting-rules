@@ -1,11 +1,8 @@
-/* eslint-disable */
 require('@rushstack/eslint-patch/modern-module-resolution');
 
-module.exports  = {
+module.exports = {
   root: true,
-  extends: [
-    '@myscope/eslint-config/src/eslint-configs/react.js',
-  ],
+  extends: ['@myscope/eslint-config/src/eslint-configs/react.js'],
   parserOptions: {
     project: './tsconfig.json',
     createDefaultProgram: true, //<----- https://stackoverflow.com/a/64488474/3136861

@@ -1,4 +1,3 @@
-/* eslint-disable */
 const { compilerOptions } = require('./tsconfig.json');
 
 // "projectRoot" is the current project root
@@ -27,27 +26,25 @@ module.exports = {
   // Automatically clear mock calls and instances before every test
   clearMocks: true,
 
-
   // Scripts to run before jest is loaded
   // ------------------------------------
   setupFiles: [
-    require.resolve('regenerator-runtime/runtime') // https://github.com/facebook/jest/issues/5698
+    require.resolve('regenerator-runtime/runtime'), // https://github.com/facebook/jest/issues/5698
   ],
-
 
   // Scripts to run after jest is loaded
   // -----------------------------------
   setupFilesAfterEnv: [
     // 'jest-extended',
-    require.resolve('./jest-setup/setup-tests.js')
+    require.resolve('./jest-setup/setup-tests.js'),
   ],
 
   moduleNameMapper: {
-    '^~/(.*)$': '<rootDir>/src/$1',           // https://stackoverflow.com/a/56298746/3136861
-    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': require.resolve('./jest-setup/file-mock.js'),
+    '^~/(.*)$': '<rootDir>/src/$1', // https://stackoverflow.com/a/56298746/3136861
+    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
+      require.resolve('./jest-setup/file-mock.js'),
     '\\.module\\.css$': 'identity-obj-proxy', // <--- this must come before '\\.css$'
     '\\.(css|less)$': require.resolve('./jest-setup/style-mock.js'),
-  }
-}
+  },
+};
 // --- EOF ---
-

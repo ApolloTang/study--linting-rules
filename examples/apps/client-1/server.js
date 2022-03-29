@@ -11,7 +11,7 @@ app.use(compression()); // <--- must be first
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // send all requests to index.html so browserHistory in React Router works
-app.get('*', function (req, res){
+app.get('*', function (req, res) {
   // The following header prevents browsers from caching index.html and 404 statics asset:
   //
   // Reasons:
@@ -33,6 +33,6 @@ app.get('*', function (req, res){
 });
 
 var PORT = process.env.PORT || 8080;
-app.listen(PORT, function(){
-  console.log('Production express server running at http://localhost:' + PORT);
+app.listen(PORT, function () {
+  console.info('Production express server running at http://localhost:' + PORT);
 });
