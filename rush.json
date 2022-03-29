@@ -484,6 +484,14 @@
     {
       "packageName": "@myscope/client-app-config",
       "projectFolder": "tools/client-app-config"
+    },
+
+    //
+    // examples
+    // -------------------------------------------------------
+    {
+      "packageName": "client-lint-study",
+      "projectFolder": "apps/client-lint-study"
     }
   ]
 }
