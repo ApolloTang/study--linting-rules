@@ -8,3 +8,6 @@ test('jest checking', () => {
   screen.debug(container);
   expect(true).toBeTruthy();
 });
+
+test('empty test', () => {
+});

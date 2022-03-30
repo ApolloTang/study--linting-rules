@@ -9,16 +9,5 @@
     "paths": {
       "src/*": ["src/*"]
     }
-
-    // --------------
-    // Technical debt
-    // --------------
-    // "strict": false,
-    // "noImplicitAny": true
-  },
-
-  "references": [
-    { "path": "../../ui/component-1" },
-    { "path": "../../utils/util--foo-1" }
-  ]
+  }
 }
