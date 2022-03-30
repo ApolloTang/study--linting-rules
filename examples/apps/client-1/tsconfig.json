@@ -9,12 +9,6 @@
     "paths": {
       "src/*": ["src/*"]
     }
-
-    // --------------
-    // Technical debt
-    // --------------
-    // "strict": false,
-    // "noImplicitAny": true
   },
 
   "references": [

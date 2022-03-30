@@ -1,4 +1,3 @@
-**/extracted-messages/**/*.json
 dist
 
 package.json
