@@ -20,11 +20,11 @@ module.exports = {
   },
 
   parser: '@typescript-eslint/parser', // Enable type aware linting with typescript-eslint/parser
-  parserOptions: {
-    project: 'tsconfig.json',
-    ecmaVersion: 2019,
-    sourceType: 'module',
-  },
+  // parserOptions: {
+  //   project: 'tsconfig.json',
+  //   ecmaVersion: 2019,
+  //   sourceType: 'module',
+  // },
 
   ignorePatterns: [
     'node_modules/',
