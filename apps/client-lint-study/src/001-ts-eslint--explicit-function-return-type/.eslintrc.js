@@ -14,6 +14,6 @@ module.exports = {
     },
   },
   rules: {
-    '@typescript-eslint/explicit-function-return-type': 'error',
+    '@typescript-eslint/explicit-function-return-type': 'warn',
   },
 };
