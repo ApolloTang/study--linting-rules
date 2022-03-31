@@ -2,9 +2,10 @@ import React from 'react';
 import img from './react.png';
 import s from './style.module.less';
 
-console.log('asfd');
+/* eslint-disable-next-line */
+console.log('it works');
 
-const foo: string = 1;
+// const foo: string = 1;
 
 const App = () => (
   <div className={`${s.app}`}>
