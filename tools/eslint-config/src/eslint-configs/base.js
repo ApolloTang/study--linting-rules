@@ -20,8 +20,14 @@ module.exports = {
   },
 
   parser: '@typescript-eslint/parser', // Enable type aware linting with typescript-eslint/parser
+  // [important]----------------------------------------------
+  // 'parserOptions' must be located in package's eslintrc.js
+  // so that eslint understand where the package boundary is.
+  // ---------------------------------------------------------
   // parserOptions: {
-  //   project: 'tsconfig.json',
+  //   tsconfigRootDir: __dirname,
+  //   createDefaultProgram: true, //<----- https://stackoverflow.com/a/64488474/3136861
+  //   project: './tsconfig.json',
   //   ecmaVersion: 2019,
   //   sourceType: 'module',
   // },
