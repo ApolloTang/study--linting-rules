@@ -4,10 +4,10 @@
   "include": ["./"],
 
   "compilerOptions": {
-    // --------------
-    // Technical debt
-    // --------------
-    // "strict": false,
-    // "noImplicitAny": true
+    "types": [
+      "node",
+      "@types/testing-library__jest-dom"
+    ]
+
   }
 }
