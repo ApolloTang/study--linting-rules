@@ -4,10 +4,14 @@ module.exports = {
   root: true,
   extends: ['@myscope/eslint-config/src/eslint-configs/react.js'],
   parserOptions: {
+    project: './tsconfig.json',
+    createDefaultProgram: true, //<----- https://stackoverflow.com/a/64488474/3136861
     tsconfigRootDir: __dirname,
-    project: 'tsconfig.json',
-    ecmaVersion: 2019,
     sourceType: 'module',
+    ecmaVersion: 2015,
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'error',
