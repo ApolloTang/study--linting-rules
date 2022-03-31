@@ -1,10 +1,13 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import * as rtl from '@testing-library/react';
+const { render, waitFor } = rtl;
 
 import App from './index';
 
-test('jest checking', () => {
-  const { container } = render(<App />);
-  screen.debug(container);
-  expect(true).toBeTruthy();
+test('jest checking', async () => {
+  const rendered = render(<App />);
+  await waitFor(() => {
+    expect(rendered.getByText(/hello react/i)).toBeTruthy();
+    // rtl.screen.debug(rendered.container);
+  });
 });
