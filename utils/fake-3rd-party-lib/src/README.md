@@ -1,0 +1,1 @@
+main.d.ts is manually create and has typo

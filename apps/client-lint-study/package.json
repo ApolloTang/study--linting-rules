@@ -11,6 +11,7 @@
   "dependencies": {
     "@myscope/util--foo-1": "workspace:*",
     "@myscope/ui--component-1": "workspace:*",
+    "@myscope/util--fake-3rd-party-lib": "workspace:*",
     "core-js": "^3.6.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

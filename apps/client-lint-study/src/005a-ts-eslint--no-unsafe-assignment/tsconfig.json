@@ -1,0 +1,10 @@
+{
+  "extends": "./node_modules/@myscope/client-app-config/src/tsconfig-base.json",
+
+  "include": ["./"],
+
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false
+  }
+}

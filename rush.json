@@ -492,6 +492,14 @@
     {
       "packageName": "client-lint-study",
       "projectFolder": "apps/client-lint-study"
+    },
+
+    //
+    // Utils
+    // -------------------------------------------------------
+    {
+      "packageName": "@myscope/util--fake-3rd-party-lib",
+      "projectFolder": "utils/fake-3rd-party-lib"
     }
   ]
 }

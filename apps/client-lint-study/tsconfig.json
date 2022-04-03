@@ -13,5 +13,9 @@
     "paths": {
       "src/*": ["src/*"]
     }
-  }
+  },
+
+  "references": [
+    { "path": "../../utils/fake-3rd-party-lib" }
+  ]
 }
