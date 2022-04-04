@@ -4,7 +4,7 @@ import { data1 } from '@myscope/util--fake-3rd-party-lib';
 
 // I know the type of data and I am going assert it for you
 type dataType = {
-  data: string;
+  prop: string;
 };
 const foo = data1 as dataType;
 
