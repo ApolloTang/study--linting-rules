@@ -1,7 +1,12 @@
-interface someObjType {
+interface someObj1 {
   prop: string;
 }
-declare const data1Typo: someObjType;
-declare const data2Typo: someObjType;
-export { data1Typo, data2Typo, someObjectTypo };
+
+interface someObj2 {
+  prop: string;
+}
+
+declare const data1: someObj1;
+declare const data2: someObj2;
+export { data1Typo, data2Typo /* , someObj, someObj2 */ };
 //# sourceMappingURL=main.d.ts.map

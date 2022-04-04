@@ -3,9 +3,9 @@ import { data1 } from '@myscope/util--fake-3rd-party-lib';
 // tsc don't know the type of data1, so it label it as 'any' type
 
 // I know the type of data and I am going assert it for you
-type dataType = {
+type data1Type = {
   prop: string;
 };
-const foo = data1 as dataType;
+const foo = data1 as data1Type;
 
 export { foo };
