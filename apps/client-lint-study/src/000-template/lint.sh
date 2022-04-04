@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
-../../node_modules/.bin/eslint ./index.tsx $@
+../../node_modules/.bin/eslint $@
 
