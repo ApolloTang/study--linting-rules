@@ -6,8 +6,7 @@
   "types": "src/main.d.ts",
   "license": "ISC",
   "dependencies": {
-    "core-js": "^3.6.5",
-    "node-fetch": "~3.2.3"
+    "core-js": "^3.6.5"
   },
   "devDependencies": {
     "@myscope/heft-config-default-rig": "workspace:*",

@@ -1,10 +1,5 @@
-import fetch from 'node-fetch';
-const response = await fetch('https://httpbin.org/post', {
-  method: 'post',
-  body: JSON.stringify({ data: 'data' }),
-  headers: { 'Content-Type': 'application/json' },
-});
-const data1 = await response.json();
-const data2 = await response.json();
+const data = { data: 'data' };
+const data1 = data;
+const data2 = data;
 export { data1, data2 };
 //# sourceMappingURL=main.js.map
