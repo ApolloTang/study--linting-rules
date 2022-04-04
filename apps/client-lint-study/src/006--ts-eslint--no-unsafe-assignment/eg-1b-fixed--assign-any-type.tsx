@@ -5,7 +5,7 @@ import { data } from './really-bad-typescript';
 // Need to fix upstream typescript in './really-bad-typescript.ts'
 // but for now know we know the shape of type used in this file:
 type temporaryFix_dataType = {
-  data: string;
+  prop: string;
 };
 
 const foo = data as temporaryFix_dataType;
