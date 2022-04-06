@@ -1,20 +1,16 @@
-// This is a required rule for consistency, see:
+// The rule:
+//   @typescript-eslint/explicit-function-return-type
+// should be OFF. Turning OFF is a required setting for consistency, see:
 //     https://github.com/typescript-eslint/typescript-eslint/issues/50
-// I am not sure if this has already been fix.
-// --------------------------------------------------------------------
+//
+// This rule warn you that you have forgotten to annotate the return type
+// of a function; but usually typescript is able to figure out the
+// return type of a function, so there is unnecessary.
 
-// XXeslint-disable-next-line @typescript-eslint/explicit-function-return-type
-const foo = () => {
+const returnString = () => 'hello world';
+
+const returnVoid = () => {
   console.warn('foo');
 };
 
-// XXeslint-disable-next-line @typescript-eslint/explicit-function-return-type
-function bar() {
-  console.warn('foo');
-}
-
-function zoo(): void {
-  console.warn('foo');
-}
-
-export { foo, bar, zoo };
+export { returnString, returnVoid };
