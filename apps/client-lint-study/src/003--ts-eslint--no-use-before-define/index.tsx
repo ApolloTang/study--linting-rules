@@ -1,6 +1,6 @@
 // Calling function before declare
 // -------------------------------
-// @ts-expect-error | Reason: tsc complain foo is used before declare
+// @ts-expect-error | Reason: foo is used before declare
 foo(10000);
 const foo = (input: number) => input;
 
@@ -11,7 +11,7 @@ function bar(input: number) {
 
 // Using Enum before declare
 // -------------------------
-// @ts-expect-error | Reason: tsc complain Enum is used before declare
+// @ts-expect-error | Reason: Enum is used before declare
 const myEnum: MyEnum = MyEnum.a;
 enum MyEnum {
   'a',
@@ -26,4 +26,4 @@ interface objType {
   bar: string;
 }
 
-export { obj, myEnum };
+export {};
