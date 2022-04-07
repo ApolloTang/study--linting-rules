@@ -1,0 +1,13 @@
+{
+  "extends": "./node_modules/@myscope/client-app-config/src/tsconfig-base.json",
+
+  "include": ["./"],
+
+  "compilerOptions": {
+    "types": [
+      "node",
+      "@types/testing-library__jest-dom"
+    ]
+
+  }
+}
