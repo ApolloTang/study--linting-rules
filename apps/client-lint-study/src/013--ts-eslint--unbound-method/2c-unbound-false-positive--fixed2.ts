@@ -1,5 +1,7 @@
 const myObject = {
   sayName(this: void, name: string) {
+    //    ^^^^
+    // formal-parameter 'this' only exist in typescript
     return name;
   },
 };

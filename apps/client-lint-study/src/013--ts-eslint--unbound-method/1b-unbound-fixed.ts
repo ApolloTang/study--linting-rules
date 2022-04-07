@@ -8,6 +8,6 @@ const myObject = {
 console.info('ok: ', myObject.getProp());
 
 const getProp = myObject.getProp.bind(myObject);
-console.info('error: ', getProp());
+console.info('fixed: ', getProp());
 
 export {};

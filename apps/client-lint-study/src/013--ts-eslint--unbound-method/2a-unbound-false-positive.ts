@@ -1,5 +1,6 @@
 const myObject = {
   sayName(name: string) {
+    // this is never used in this method
     return name;
   },
 };

@@ -7,7 +7,7 @@ const myObject = {
 
 console.info('ok: ', myObject.getProp());
 
-const { getProp } = myObject;
+const { getProp } = myObject; // getProp is now unbound
 console.info('error: ', getProp());
 
 export {};
