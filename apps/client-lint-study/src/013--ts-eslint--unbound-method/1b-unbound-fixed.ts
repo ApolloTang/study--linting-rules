@@ -10,5 +10,4 @@ const myObject = {
 const getProp = myObject.getProp.bind(myObject);
 console.info('fixed: ', getProp());
 
-
 export {};

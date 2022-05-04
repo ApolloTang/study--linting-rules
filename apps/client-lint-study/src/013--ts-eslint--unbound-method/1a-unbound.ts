@@ -7,9 +7,13 @@ const myObject = {
 
 console.info('ok: ', myObject.getProp());
 
-const { getProp } = myObject; // getProp is now unbound,
-//                               meaning the method getProp() is no longer
-//                               attached to myObject, this is no longer point to myObject
+const { getProp } = myObject;
+//    ^^^^^^^^^^^^^^^^^^^^^^Avoid referencing unbound methods
+//                          which may cause unintentional scoping of `this`
+//
+//      getProp is unbound; meaning the method getProp() is no longer
+//      attached to myObject. the keyword 'this' is no longer point to myObject
+
 console.info('error: ', getProp());
 
 export {};
