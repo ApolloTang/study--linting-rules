@@ -19,5 +19,20 @@ const myFunction_ok = (input: any): void => {
   console.info(input);
 };
 
-export { foo, myFunction_avoid, myFunction_ok };
+// You can also annotate it with 'unknown' type
+const functionTakeUnknown = (input: unknown): void => {
+  // console.info(input + 2);
+  //              ^^^^^^^^^^[eslint @typescript-eslint/restrict-plus-operands] Operands of '+' operation must either be both strings or both numbers.
+  //                        [tsserver 2571] Object is of type 'unknown'.
+
+  // 'unknown' must be assert to a known type before any operation can be done
+  console.info((input as number) + 2);
+};
+
+// Difference between 'any' and 'unknown':
+// ---------------------------------------
+//       any: I don't care
+//   unknown: I don't know yet.
+
+export { foo, myFunction_avoid, myFunction_ok, functionTakeUnknown };
 export type { MyInterface };

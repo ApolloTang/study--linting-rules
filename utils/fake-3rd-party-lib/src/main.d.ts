@@ -2,7 +2,7 @@ declare const someObj1: {
   prop: string;
 };
 
-declare const someObj1: {
+declare const someObj2: {
   prop: string;
 };
 
