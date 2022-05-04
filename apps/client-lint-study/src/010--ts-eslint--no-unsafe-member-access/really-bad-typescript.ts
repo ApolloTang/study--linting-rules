@@ -1,8 +1,6 @@
-/* eslint-disable */
-
 // @ts-ignore
-const untypedObj:any = {
-  prop: 'prop on any'
+const untypedObj: any = {
+  prop: 'prop on any',
 };
 
 export { untypedObj };
