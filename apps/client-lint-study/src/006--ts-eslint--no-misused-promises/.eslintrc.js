@@ -14,7 +14,10 @@ module.exports = {
     },
   },
   rules: {
-    '@typescript-eslint/no-floating-promises': 'warn',
+    // '@typescript-eslint/no-misused-promises': [
+    //   'warn',
+    //   { checksVoidReturn: true },
+    // ],
     '@typescript-eslint/no-misused-promises': 'warn',
   },
 };

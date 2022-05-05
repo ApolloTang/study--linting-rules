@@ -9,4 +9,6 @@ const asyncCallback = async (v: number) => {
 };
 [1, 2, 3].forEach(asyncCallback);
 
+// see rule @typescript-eslint/no-floating-promises
+// first before look the fix for this rule violation
 export {};
